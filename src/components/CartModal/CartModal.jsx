@@ -6,6 +6,7 @@ import TotalAmount from "./TotalAmount";
 
 import cartModalStyles from "./CartModal.styles";
 
+// CR: this should be a cart component, and the component consumer will wrap it with <Modal /> and its logic
 const CartModal = ({ shouldOpen, handleClose }) => {
   const classes = cartModalStyles();
 
