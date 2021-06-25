@@ -16,6 +16,7 @@ const cartButtonStyles = makeStyles((theme) => ({
     marginRight: "4px",
   },
   badge: {
+    // CR: fills like padding will be semantically better
     margin: "1px",
     backgroundColor: "#8a2b06",
   },
