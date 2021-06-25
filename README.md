@@ -1,3 +1,17 @@
+# General CR comments
+- only two commits bubi?
+- use `function Component({}) {`, this way the function surely has a name and not anonymous,
+  also you can do `export default function Component({}) {`.
+- you should seperate components to three types - 
+    * src/components/ - mostly UI, or with specific and general logic
+    * src/containers/ - bussines components with access to app context or know your app bussines
+    * src/views/ or src/screens/ or src/pages/ - page wrappers or route components
+  the two latter aren't really necessary in your app, but I would still use src/containers/
+  and separate components to logical (smart) and visual (dumb) components 
+  (I did an almost comparison to dumb and smart components concept, you should read about it).
+- read about `useCallback` and use it.
+- dont use string templates (\`text ${value}\`) inside JSX, just do `<a>text {value}</a>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
